@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #1a3292, #0f1a2e, #1c1f2b, #0f1a2e);
+        background-size: 400% 400%;
+        animation: gradientAnimation 15s ease infinite;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+      }
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-gray-900 text-white">
+      <div class="container py-3">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <h1 class="text-slate-900 dark:text-white w-auto h-8 text-2xl mr-1">
+              tailwindcss
+            </h1>
+            <i class="gg-arrows-expand-up-left text-2xl"></i>
+          </div>
+          <nav>
+            <ul class="flex space-x-4">
+              <li><a href="#" class="hover:text-gray-400">Docs</a></li>
+              <li><a href="#" class="hover:text-gray-400">Components</a></li>
+              <li><a href="#" class="hover:text-gray-400">Plugins</a></li>
+              <li><a href="#" class="hover:text-gray-400">Info</a></li>
+              <!-- Add more navigation links here -->
+            </ul>
+          </nav>
+        </div>
+        <div class="text-center mt-8">
+          <h2
+            class="text-slate-900 font-extrabold text-4x1 sm:text-5x1 lg:text-6x1 tracking-tight text-center dark:text-white"
+          >
+            Build faster with Tailwind CSS.<br />
+            A product provided from nerds, for nerds.
+          </h2>
+          <p class="text-2xl mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+            Vestibulum sagittis lorem eget dolor dapibus, ut aliquet tortor
+            luctus. <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+            Vestibulum sagittis lorem eget dolor dapibus, ut aliquet tortor
+            luctus.
+          </p>
+          <div class="mt-8 flex justify-center items-center">
+            <a href="#" class="btn">Get started</a>
+            <input
+              type="text"
+              class="search-bar ml-4"
+              placeholder="Quick search..."
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
